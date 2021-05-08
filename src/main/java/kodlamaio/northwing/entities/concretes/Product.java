@@ -22,8 +22,8 @@ public class Product {
     @Column(name = "unit_price")
     private double unitPrice;
 
-    @Column(name = "unit_stock")
-    private short unitStock;
+    @Column(name = "units_in_stock")
+    private short unitsInStock;
 
     @Column(name = "quantity_per_unit")
     private String quantityPerUnit;
@@ -31,12 +31,12 @@ public class Product {
     public Product() {
     }
 
-    public Product(int id, int categoryId, String productName, double unitPrice, short unitStock, String quantityPerUnit) {
+    public Product(int id, int categoryId, String productName, double unitPrice, short unitsInStock, String quantityPerUnit) {
         this.id = id;
         this.categoryId = categoryId;
         this.productName = productName;
         this.unitPrice = unitPrice;
-        this.unitStock = unitStock;
+        this.unitsInStock = unitsInStock;
         this.quantityPerUnit = quantityPerUnit;
     }
 }
